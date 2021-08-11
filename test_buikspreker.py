@@ -9,4 +9,5 @@ def test_translate_twee () :
 def test_translate_veertien () :
     assert translate (14) == "veertien"
 
-    
+def test_translate_vijftien () :
+    assert translate (15) == "vijftien"
