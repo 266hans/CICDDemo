@@ -1,14 +1,9 @@
 def translate (i: int) -> str: 
-    return numbers[i]
-    
-
-
-
-
-# test driven development: 
-# - write a test - resulting red test 
-# - Change the code minimally to get all test green
-# - Do again
+    if i in numbers: 
+        return numbers[i] 
+    else: 
+        combined_letter = numbers[int(str(i)[1])]+numbers[int(str(i)[0])*10]
+        return combined_letter
 
 numbers = {
     1: "één",
@@ -24,5 +19,10 @@ numbers = {
     11: "elf",
     12: "twaalf",
     13: "dertien",
-    14: "veertien",
+    14: "veertien",  
 }
+
+# test driven development: 
+# - write a test - resulting red test 
+# - Change the code minimally to get all test green
+# - Do again

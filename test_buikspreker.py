@@ -11,3 +11,11 @@ def test_translate_veertien () :
 
 def test_translate_vijftien () :
     assert translate (15) == "vijftien"
+
+def test_translate_zestien () :
+    assert translate (16) == "zestien"
+
+def test_translate_hogere_getallen () :
+    assert translate (18) == "achttien"
+    assert translate (19) == "negentien"
+    assert translate (17) == "zeventien"
